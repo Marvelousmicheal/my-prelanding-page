@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arimo", sans-serif;
+}
+
+html {
+  block-size: 100%;
+  overflow: hidden;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  block-size: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overscroll-behavior: none;
+  background-color: rgb(15, 15, 15);
+  color: white;
+}
+
+main {
+  block-size: 100%;
+  position: relative;
+}
+main .picture {
+  position: absolute;
+  width: 350px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .picture > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  z-index: 1000;
+}
+main .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 120;
+  font-weight: 400;
+}
+main .title .sub {
+  transform: translateX(50px);
+}
+main .title .sub .line {
+  background-color: white;
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: -18%;
+  z-index: 1000;
+}
+main .title .text {
+  display: block;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: white;
+  transform: translateX(-50px);
+}
+main .title .text-1 {
+  display: block;
+  font-size: 13px;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+  color: white;
+  font-weight: 600;
+}
+
+/* CSS for iPhone 11 Pro Max and above *//*# sourceMappingURL=style.css.map */
