@@ -139,7 +139,10 @@ main .scroll {
 
 @media (max-width: 600px) and (min-width: 375px) {
   main {
-    height: 100vh;
+    height: 120vh;
+  }
+  main .title {
+    top: 40%;
   }
   main .text {
     font-size: 60px !important;
@@ -150,9 +153,10 @@ main .scroll {
   }
   main .picture {
     width: 200px !important;
+    top: 40%;
   }
   main .bleft {
-    bottom: 110px;
+    bottom: 285px;
   }
   main .bleft ul {
     display: flex;
@@ -162,6 +166,6 @@ main .scroll {
   }
   main .bright {
     width: 300px;
-    bottom: 20px;
+    bottom: 186px;
   }
 }/*# sourceMappingURL=style.css.map */
