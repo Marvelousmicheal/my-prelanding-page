@@ -24,6 +24,9 @@ body{
 main{
     block-size: 100%;
     position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100%;
 
     .picture{
         position: absolute;
@@ -155,7 +158,21 @@ padding-top: 10px;
                     width: 80px !important;
                 }
                 .picture{
-                    width: 149px !important;
+                    width: 200px !important;
                 }
+                                .bleft{
+                                    bottom: 110px;
+                                    ul{
+                                        display: flex;
+                                    }
+                                    li {
+                                           
+                                            margin-right: 3px;
+                                        }
+                                }
+                                                                .bright{
+                                                                    width: 300px;
+                                                                    bottom: 20px;
+                                                                }
     }
 }
