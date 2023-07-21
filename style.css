@@ -170,4 +170,7 @@ main .scroll {
     right: 0px;
     left: 40px;
   }
+  main .scroll {
+    padding-top: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
