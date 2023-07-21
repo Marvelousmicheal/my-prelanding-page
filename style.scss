@@ -149,7 +149,7 @@ padding-top: 10px;
    
     main{
      
-        height: 120vh;
+        height: 110vh;
 
         .title {
             top: 40%;
@@ -163,11 +163,11 @@ padding-top: 10px;
                 }
                 .picture{
                     width: 200px !important;
-                    top: 40%;
+                    top: 36%;
                     
                 }
                                 .bleft{
-                                    bottom: 285px;
+                                    bottom: 305px;
                                     ul{
                                         display: flex;
                                     }
@@ -179,6 +179,7 @@ padding-top: 10px;
                                     .bright{
                                                                     width: 300px;
                                                                     bottom: 186px;
-                                                                }
+right: 0px; 
+left: 40px;                                                               }
     }
 }
