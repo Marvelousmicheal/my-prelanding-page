@@ -156,7 +156,7 @@ main .scroll {
     top: 36%;
   }
   main .bleft {
-    bottom: 305px;
+    bottom: 295px;
   }
   main .bleft ul {
     display: flex;
@@ -166,7 +166,7 @@ main .scroll {
   }
   main .bright {
     width: 300px;
-    bottom: 186px;
+    bottom: 176px;
     right: 0px;
     left: 40px;
   }
