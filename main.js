@@ -158,47 +158,38 @@ window.addEventListener("load", () => {
   });
   // The event listener for the keydown event handles arrow key presses and initiates the animate function.
 
- window.addEventListener("wheel", (el) => {
-   const list = selectAll(".picture");
-   if (el.deltaY < 0 && !isAnimating) {
-     animate(list, "left");
-   }
-   if (el.deltaY > 0 && !isAnimating) {
-     animate(list, "right");
-   }
- });
+  window.addEventListener("wheel", (el) => {
+    const list = selectAll(".picture");
+    if (el.deltaY < 0 && !isAnimating) {
+      animate(list, "left");
+    }
+    if (el.deltaY > 0 && !isAnimating) {
+      animate(list, "right");
+    }
+  });
 
- window.addEventListener("touchstart", (e) => {
-   // Save the initial touch position
-   const touchStartY = e.touches[0].clientY;
- });
+  window.addEventListener("touchmove", (e) => {
+    // Prevent the default scrolling behavior
+    e.preventDefault();
+    const touchStartY = e.touches[0].clientY;
+    // Get the current touch position
+    const touchCurrentY = e.touches[0].clientY;
 
- window.addEventListener("touchmove", (e) => {
-   // Prevent the default scrolling behavior
-   e.preventDefault();
+    // Calculate the change in Y position
+    const deltaY = touchCurrentY - touchStartY;
 
-   // Get the current touch position
-   const touchCurrentY = e.touches[0].clientY;
-
-   // Calculate the change in Y position
-   const deltaY = touchCurrentY - touchStartY;
-
-   // Use the deltaY value to determine the scrolling direction
-   const list = selectAll(".picture");
-   if (deltaY < 0 && !isAnimating) {
-     // Scrolling up
-     animate(list, "left");
-   }
-   if (deltaY > 0 && !isAnimating) {
-     // Scrolling down
-     animate(list, "right");
-   }
- });
-
+    // Use the deltaY value to determine the scrolling direction
+    const list = selectAll(".picture");
+    if (deltaY < 0 && !isAnimating) {
+      // Scrolling up
+      animate(list, "left");
+    }
+    if (deltaY > 0 && !isAnimating) {
+      // Scrolling down
+      animate(list, "right");
+    }
+  });
 });
-
-
-
 
 // //import { select, selectAll, create } from "./extras";
 // import { myArray } from "./data";
